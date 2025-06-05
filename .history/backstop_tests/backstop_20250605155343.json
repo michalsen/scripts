@@ -1,0 +1,171 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "75 Year Heros",
+      "url": "https://TEST_SITE/about/75years/heroes",
+      "referenceUrl": "https://LIVE_SITE/about/75years/heroes",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Prevent Kid Disease",
+      "url": "https://TEST_SITE/atoz/content/preventkiddisease",
+      "referenceUrl": "https://LIVE_SITE/atoz/content/preventkiddisease",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Tips for Your Check",
+      "url": "https://TEST_SITE/atoz/content/tips-your-check",
+      "referenceUrl": "https://LIVE_SITE/atoz/content/tips-your-check",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "10 Common Habits That May Harm Your Kidneys",
+      "url": "https://TEST_SITE/content/10-common-habits-that-may-harm-your-kidneys",
+      "referenceUrl": "https://LIVE_SITE/content/10-common-habits-that-may-harm-your-kidneys",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Women and Kidney Disease",
+      "url": "https://TEST_SITE/newsletter/women-kidney-disease",
+      "referenceUrl": "https://LIVE_SITE/newsletter/women-kidney-disease",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "Kidney Disease",
+      "url": "https://TEST_SITE/kidneydisease",
+      "referenceUrl": "https://LIVE_SITE/kidneydisease",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    },
+    {
+      "label": "How Kidneys Work",
+      "url": "https://TEST_SITE/kidneydisease/howkidneyswrk",
+      "referenceUrl": "https://LIVE_SITE/kidneydisease/howkidneyswrk",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 8,
+      "requireSameDimensions": false
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": [
+    "browser"
+  ],
+  "engine": "playwright",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
