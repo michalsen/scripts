@@ -55,6 +55,11 @@ Cypress end-to-end test suites including:
 BackstopJS visual regression testing configuration:
 - `backstop.json` - Main configuration file for visual testing scenarios
 
+#### `/maintenance/`
+File system maintenance and cleanup utilities:
+- `find_duplicates.py` - Python script to identify duplicate images by content hash
+- `find_large_files.sh` - Bash script to locate the largest files in a directory
+
 ## Usage
 
 ### Running the Daily Log Analysis
