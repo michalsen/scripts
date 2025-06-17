@@ -59,6 +59,7 @@ BackstopJS visual regression testing configuration:
 File system maintenance and cleanup utilities:
 - `find_duplicates.py` - Python script to identify duplicate images by content hash
 - `find_large_files.sh` - Bash script to locate the largest files in a directory
+- `check_cache.py` - Python script to monitor cache age and identify pages with cache issues
 
 ## Usage
 
@@ -106,6 +107,39 @@ npx backstop test
 
 # Approve reference images
 npx backstop approve
+```
+
+### Running Maintenance Scripts
+
+#### Cache Monitoring
+```bash
+# Check cache age for configured URLs
+cd maintenance
+python3 check_cache.py
+```
+
+**Configuration**: Edit `check_cache.py` to set your site URL and paths:
+```python
+site = 'https://your-site.com'
+paths = [
+    '/page1',
+    '/page2',
+    '/page3'
+]
+```
+
+#### Find Large Files
+```bash
+# Find the 10 largest files in a directory
+./maintenance/find_large_files.sh /path/to/directory 10
+```
+
+#### Find Duplicate Images
+```bash
+# Interactive duplicate image finder
+cd maintenance
+python3 find_duplicates.py
+# Enter directory path when prompted
 ```
 
 ## Output Files
