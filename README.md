@@ -60,6 +60,7 @@ File system maintenance and cleanup utilities:
 - `find_duplicates.py` - Python script to identify duplicate images by content hash
 - `find_large_files.sh` - Bash script to locate the largest files in a directory
 - `check_cache.py` - Python script to monitor cache age and identify pages with cache issues
+- `git_search.sh` - Bash script to search for files across all remote Git branches
 
 ## Usage
 
@@ -141,6 +142,21 @@ cd maintenance
 python3 find_duplicates.py
 # Enter directory path when prompted
 ```
+
+#### Git File Search
+```bash
+# Search for a file across all remote Git branches
+./maintenance/git_search.sh filename.ext
+
+# Example: Search for a specific configuration file
+./maintenance/git_search.sh config.yml
+```
+
+**Features:**
+- Automatically fetches all remote branches
+- Searches through each branch for the specified file
+- Reports which branches contain the file
+- Useful for tracking file history across different branches
 
 ## Output Files
 
