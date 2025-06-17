@@ -61,6 +61,7 @@ File system maintenance and cleanup utilities:
 - `find_large_files.sh` - Bash script to locate the largest files in a directory
 - `check_cache.py` - Python script to monitor cache age and identify pages with cache issues
 - `git_search.sh` - Bash script to search for files across all remote Git branches
+- `all_images_on_page.py` - Python script to extract and analyze all images from a webpage
 
 ## Usage
 
@@ -157,6 +158,21 @@ python3 find_duplicates.py
 - Searches through each branch for the specified file
 - Reports which branches contain the file
 - Useful for tracking file history across different branches
+
+#### Web Image Analysis
+```bash
+# Extract and analyze all images from a webpage
+cd maintenance
+python3 all_images_on_page.py
+# Enter webpage URL when prompted
+```
+
+**Features:**
+- Scrapes all images from a given webpage
+- Extracts image URLs, names, titles, and alt text
+- Skips SVG images automatically
+- Converts relative URLs to absolute URLs
+- Useful for SEO audits and accessibility testing
 
 ## Output Files
 
