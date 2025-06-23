@@ -41,6 +41,34 @@ COLLECT_LOGS=true                 # Set to false to skip log collection
 CLEANUP_AGGREGATE_DIR=false       # Clean up aggregate logs directory
 ```
 
+#### `link_check.py`
+Scrapy-based web crawler for checking redirects and broken links on websites.
+
+**Features:**
+- Crawls entire websites to identify 301/302 redirects
+- Detects 404 errors and broken links
+- Provides detailed reporting with referer information
+- Configurable crawling rules to exclude specific file types
+- Respects robots.txt and includes proper crawl delays
+
+**Prerequisites:**
+- [Scrapy](https://scrapy.org/) web crawling framework
+- Python 3.x
+
+**Usage:**
+```bash
+# Interactive mode - prompts for domain
+python3 link_check.py
+
+# Command line mode
+scrapy crawl redirect_checker -a domain=example.com
+```
+
+**Output:**
+- Summary of all redirects found (301/302 status codes)
+- List of 404 errors with referring pages
+- Total counts for redirects and broken links
+
 ### Testing Suites
 
 #### `/cypress_tests/`
