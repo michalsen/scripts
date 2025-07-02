@@ -90,6 +90,7 @@ File system maintenance and cleanup utilities:
 - `check_cache.py` - Python script to monitor cache age and identify pages with cache issues
 - `git_search.sh` - Bash script to search for files across all remote Git branches
 - `all_images_on_page.py` - Python script to extract and analyze all images from a webpage
+- `check_links.py` - Checks links throughout site
 
 ## Usage
 
@@ -232,7 +233,7 @@ The `daily_run.sh` script generates several output files:
    ```bash
    # macOS
    brew install goaccess
-   
+
    # Ubuntu/Debian
    sudo apt-get install goaccess
    ```
@@ -280,4 +281,3 @@ For issues or questions:
 - Check the Pantheon documentation for Terminus-related issues
 - Refer to Cypress and BackstopJS documentation for testing issues
 - Review GoAccess documentation for log analysis questions
-
